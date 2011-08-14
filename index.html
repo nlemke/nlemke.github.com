@@ -108,38 +108,6 @@
 
 <p>this is the first post. Let&#8217;s see where this is going :)</p>
 
-<p>  <code>sample code</code></p>
-
-<ul>
-<li>itemize me please</li>
-<li>and me too</li>
-</ul>
-
-
-<div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
-<span class='line'>2</span>
-<span class='line'>3</span>
-<span class='line'>4</span>
-<span class='line'>5</span>
-</pre></td><td class='code' width='100%'><pre><code class='ruby'><div class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
-</div><div class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
-</div><div class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
-</div><div class='line'>  <span class="k">end</span>
-</div><div class='line'><span class="k">end</span>
-</div></code></pre></td></tr></table></div>
-
-<div><script src='https://gist.github.com/996818.js?file='></script>
-<noscript><pre><code>@@ -590,7 +590,7 @@ class SpritesTest &lt; Test::Unit::TestCase
-  it &quot;should generate a sprite from nested folders&quot; do
-    css = render &lt;&lt;-SCSS
--     @import &quot;nested/*.png&quot;;
-+     @import &quot;nested/**/*.png&quot;;
-      @include all-nested-sprites;
-    SCSS
-    assert_correct css, &lt;&lt;-CSS</code></pre></noscript></div>
-
-
-
 </div>
   <footer>
     <a rel="full-article" href="/blog/2011/08/14/the-beginning/">Read on &rarr;</a>
