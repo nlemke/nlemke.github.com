@@ -162,6 +162,50 @@
 
 
 
+
+<div><figure role=code><figcaption><span>Pyhton test - python.py </span></figcaption>
+ <div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+<span class='line'>2</span>
+<span class='line'>3</span>
+<span class='line'>4</span>
+<span class='line'>5</span>
+<span class='line'>6</span>
+<span class='line'>7</span>
+<span class='line'>8</span>
+<span class='line'>9</span>
+<span class='line'>10</span>
+<span class='line'>11</span>
+<span class='line'>12</span>
+<span class='line'>13</span>
+<span class='line'>14</span>
+<span class='line'>15</span>
+<span class='line'>16</span>
+<span class='line'>17</span>
+<span class='line'>18</span>
+<span class='line'>19</span>
+</pre></td><td class='code' width='100%'><pre><code class='py'><div class='line'><span class="c"># makes a commit trajectory plot coloured by committer</span>
+</div><div class='line'><span class="sd">&quot;&quot;&quot;</span>
+</div><div class='line'><span class="sd">Initialize database connection and global variables</span>
+</div><div class='line'><span class="sd">&quot;&quot;&quot;</span>
+</div><div class='line'><span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="n">databasefile</span> <span class="o">=</span> <span class="s">&#39;/tmp/repositories&#39;</span><span class="p">):</span>
+</div><div class='line'>
+</div><div class='line'>    <span class="c"># Open database, create if it doesn&#39;t exist</span>
+</div><div class='line'>    <span class="k">global</span> <span class="n">database</span><span class="p">,</span><span class="n">dbconnection</span>
+</div><div class='line'>    <span class="n">database</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">databasefile</span><span class="p">)</span>
+</div><div class='line'>    <span class="n">dbconnection</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</div><div class='line'>
+</div><div class='line'>    <span class="c"># Set up table structure if it doesn&#39;t exist</span>
+</div><div class='line'>    <span class="n">dbconnection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s">&quot;CREATE TABLE IF NOT EXISTS HarvestedRepository( </span><span class="se">\</span>
+</div><div class='line'><span class="s">                Name TEXT PRIMARY KEY)&quot;</span><span class="p">)</span>
+</div><div class='line'>
+</div><div class='line'>    <span class="c"># Regular expression for extracting the repository name</span>
+</div><div class='line'>    <span class="c"># from the timeline&#39;s XML title</span>
+</div><div class='line'>    <span class="k">global</span> <span class="n">repositorypattern</span>
+</div><div class='line'>    <span class="n">repositorypattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">&#39;\S*$&#39;</span><span class="p">)</span>
+</div></code></pre></td></tr></table></div></figure></div>
+
+
+
 </div>
 
 
