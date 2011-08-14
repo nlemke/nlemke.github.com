@@ -4,7 +4,7 @@
   <title>Post Modern</title>
   <link href="http://nlemke.github.com/atom.xml" rel="self"/>
   <link href="http://nlemke.github.com/"/>
-  <updated>2011-08-14T15:34:51+02:00</updated>
+  <updated>2011-08-14T16:43:50+02:00</updated>
   <id>http://nlemke.github.com/</id>
   <author>
     <name>Norman Lemke</name>
@@ -54,7 +54,19 @@ end
     assert_correct css, &amp;lt;&amp;lt;-CSS&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
 
 
+&lt;p&gt;``` R&lt;/p&gt;
 
+&lt;pre&gt;&lt;code&gt;# makes a commit trajectory plot coloured by committer
+mktrjplt &amp;lt;- function(ident, splitDF){
+  test &amp;lt;- dift(ident,splitDF)
+  test &amp;lt;- test[order(test$CommittedDate),]
+  test &amp;lt;- cbind(test, index = c(1:dim(test)[1]))
+  p &amp;lt;- qplot(CommittedDate,index,  data=test, geom=&quot;point&quot;, colour = Committer,alpha = 1/8, xlab = &quot;Time&quot;, ylab = &quot;Number of Commits&quot;)
+  print(p)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
 </content>
   </entry>
   
