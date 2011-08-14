@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Post Modern</title>
+  <link href="http://nlemke.github.com/atom.xml" rel="self"/>
+  <link href="http://nlemke.github.com/"/>
+  <updated>2011-08-14T14:45:41+02:00</updated>
+  <id>http://nlemke.github.com/</id>
+  <author>
+    <name>Norman Lemke</name>
+    
+  </author>
+
+  
+  <entry>
+    <title>The Beginning</title>
+    <link href="http://nlemke.github.com/blog/2011/08/14/the-beginning/"/>
+    <updated>2011-08-14T14:40:00+02:00</updated>
+    <id>http://nlemke.github.com/blog/2011/08/14/the-beginning</id>
+    <content type="html">&lt;h1&gt;So&lt;/h1&gt;
+
+&lt;p&gt;this is the first post. Let's see where this is going :)&lt;/p&gt;
+
+&lt;p&gt;  &lt;code&gt;sample code&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;itemize me please&lt;/li&gt;
+&lt;li&gt;and me too&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;``` ruby&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Fixnum
+  def prime?
+    ('1' * self) !~ /^1?$|^(11+?)\1+$/
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;div&gt;&lt;script src='https://gist.github.com/996818.js?file='&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;@@ -590,7 +590,7 @@ class SpritesTest &amp;lt; Test::Unit::TestCase
+  it &amp;quot;should generate a sprite from nested folders&amp;quot; do
+    css = render &amp;lt;&amp;lt;-SCSS
+-     @import &amp;quot;nested/*.png&amp;quot;;
++     @import &amp;quot;nested/**/*.png&amp;quot;;
+      @include all-nested-sprites;
+    SCSS
+    assert_correct css, &amp;lt;&amp;lt;-CSS&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+
+</content>
+  </entry>
+  
+</feed>
