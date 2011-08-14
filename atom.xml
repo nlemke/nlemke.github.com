@@ -4,7 +4,7 @@
   <title>Post Modern</title>
   <link href="http://nlemke.github.com/atom.xml" rel="self"/>
   <link href="http://nlemke.github.com/"/>
-  <updated>2011-08-14T16:43:50+02:00</updated>
+  <updated>2011-08-14T16:47:24+02:00</updated>
   <id>http://nlemke.github.com/</id>
   <author>
     <name>Norman Lemke</name>
@@ -54,19 +54,29 @@ end
     assert_correct css, &amp;lt;&amp;lt;-CSS&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
 
 
-&lt;p&gt;``` R&lt;/p&gt;
+&lt;h1&gt;Including a file extension in the title enables highlighting&lt;/h1&gt;
 
-&lt;pre&gt;&lt;code&gt;# makes a commit trajectory plot coloured by committer
-mktrjplt &amp;lt;- function(ident, splitDF){
-  test &amp;lt;- dift(ident,splitDF)
-  test &amp;lt;- test[order(test$CommittedDate),]
-  test &amp;lt;- cbind(test, index = c(1:dim(test)[1]))
-  p &amp;lt;- qplot(CommittedDate,index,  data=test, geom=&quot;point&quot;, colour = Committer,alpha = 1/8, xlab = &quot;Time&quot;, ylab = &quot;Number of Commits&quot;)
-  print(p)
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div&gt;&lt;figure role=code&gt;&lt;figcaption&gt;&lt;span&gt;Time to be Awesome - awesome.r &lt;/span&gt;&lt;/figcaption&gt;
+ &lt;div class=&quot;highlight&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class='line'&gt;1&lt;/span&gt;
+&lt;span class='line'&gt;2&lt;/span&gt;
+&lt;span class='line'&gt;3&lt;/span&gt;
+&lt;span class='line'&gt;4&lt;/span&gt;
+&lt;span class='line'&gt;5&lt;/span&gt;
+&lt;span class='line'&gt;6&lt;/span&gt;
+&lt;span class='line'&gt;7&lt;/span&gt;
+&lt;span class='line'&gt;8&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class='code' width='100%'&gt;&lt;pre&gt;&lt;code class='r'&gt;&lt;div class='line'&gt;&lt;span class=&quot;c1&quot;&gt;# makes a commit trajectory plot coloured by committer&lt;/span&gt;
+&lt;/div&gt;&lt;div class='line'&gt;mktrjplt &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;ident&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; splitDF&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+&lt;/div&gt;&lt;div class='line'&gt;  test &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; dift&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;ident&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;splitDF&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;div class='line'&gt;    test &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; test&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;order&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;test&lt;span class=&quot;p&quot;&gt;$&lt;/span&gt;CommittedDate&lt;span class=&quot;p&quot;&gt;),]&lt;/span&gt;
+&lt;/div&gt;&lt;div class='line'&gt;    test &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; cbind&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;test&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; index &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; c&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;:dim&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;test&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+&lt;/div&gt;&lt;div class='line'&gt;    p &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; qplot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;CommittedDate&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;index&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  data&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;test&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; geom&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;point&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; colour &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Committer&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;alpha &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; xlab &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Time&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; ylab &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Number of Commits&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;div class='line'&gt;    print&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;p&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/div&gt;&lt;div class='line'&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;
 
-&lt;p&gt;```&lt;/p&gt;
+
+
 </content>
   </entry>
   

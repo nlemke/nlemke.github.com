@@ -80,7 +80,163 @@
 </nav>
   <div id="main">
     <div id="content">
-      Liquid error: ClassNotFound: no lexer for alias 'R' found
+      <div>
+<article class="hentry">
+  
+  <header>
+    
+      <h1 class="entry-title">The Beginning</h1>
+    
+    
+      <p class="meta">
+
+
+
+
+<time datetime="2011-08-14 14:40:00 +0200" pubdate  updated >Aug 14<span>th</span>, 2011</time>
+
+
+</p>
+    
+  </header>
+
+
+<div class="entry-content"><h1>So</h1>
+
+<p>this is the first post. Let&#8217;s see where this is going :)</p>
+
+<!--more-->
+
+
+<p>  <code>sample code</code></p>
+
+<ul>
+<li>itemize me please</li>
+<li>and me too</li>
+</ul>
+
+
+<div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+<span class='line'>2</span>
+<span class='line'>3</span>
+<span class='line'>4</span>
+<span class='line'>5</span>
+</pre></td><td class='code' width='100%'><pre><code class='ruby'><div class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
+</div><div class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
+</div><div class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</div><div class='line'>  <span class="k">end</span>
+</div><div class='line'><span class="k">end</span>
+</div></code></pre></td></tr></table></div>
+
+<div><script src='https://gist.github.com/996818.js?file='></script>
+<noscript><pre><code>@@ -590,7 +590,7 @@ class SpritesTest &lt; Test::Unit::TestCase
+  it &quot;should generate a sprite from nested folders&quot; do
+    css = render &lt;&lt;-SCSS
+-     @import &quot;nested/*.png&quot;;
++     @import &quot;nested/**/*.png&quot;;
+      @include all-nested-sprites;
+    SCSS
+    assert_correct css, &lt;&lt;-CSS</code></pre></noscript></div>
+
+
+<h1>Including a file extension in the title enables highlighting</h1>
+
+<div><figure role=code><figcaption><span>Time to be Awesome - awesome.r </span></figcaption>
+ <div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+<span class='line'>2</span>
+<span class='line'>3</span>
+<span class='line'>4</span>
+<span class='line'>5</span>
+<span class='line'>6</span>
+<span class='line'>7</span>
+<span class='line'>8</span>
+</pre></td><td class='code' width='100%'><pre><code class='r'><div class='line'><span class="c1"># makes a commit trajectory plot coloured by committer</span>
+</div><div class='line'>mktrjplt <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>ident<span class="p">,</span> splitDF<span class="p">){</span>
+</div><div class='line'>  test <span class="o">&lt;-</span> dift<span class="p">(</span>ident<span class="p">,</span>splitDF<span class="p">)</span>
+</div><div class='line'>    test <span class="o">&lt;-</span> test<span class="p">[</span>order<span class="p">(</span>test<span class="p">$</span>CommittedDate<span class="p">),]</span>
+</div><div class='line'>    test <span class="o">&lt;-</span> cbind<span class="p">(</span>test<span class="p">,</span> index <span class="o">=</span> c<span class="p">(</span><span class="m">1</span>:dim<span class="p">(</span>test<span class="p">)[</span><span class="m">1</span><span class="p">]))</span>
+</div><div class='line'>    p <span class="o">&lt;-</span> qplot<span class="p">(</span>CommittedDate<span class="p">,</span>index<span class="p">,</span>  data<span class="o">=</span>test<span class="p">,</span> geom<span class="o">=</span><span class="s">&quot;point&quot;</span><span class="p">,</span> colour <span class="o">=</span> Committer<span class="p">,</span>alpha <span class="o">=</span> <span class="m">1</span><span class="o">/</span><span class="m">8</span><span class="p">,</span> xlab <span class="o">=</span> <span class="s">&quot;Time&quot;</span><span class="p">,</span> ylab <span class="o">=</span> <span class="s">&quot;Number of Commits&quot;</span><span class="p">)</span>
+</div><div class='line'>    print<span class="p">(</span>p<span class="p">)</span>
+</div><div class='line'><span class="p">}</span>
+</div></code></pre></td></tr></table></div></figure></div>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Norman Lemke</span></span>
+
+      
+
+
+
+
+<time datetime="2011-08-14 14:40:00 +0200" pubdate  updated >Aug 14<span>th</span>, 2011</time>
+
+
+
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nlemke.github.com/blog/2011/08/14/the-beginning/" data-via="zuiwer" data-counturl="http://nlemke.github.com/blog/2011/08/14/the-beginning/" >Tweet</a>
+  
+  
+  <g:plusone size="medium"></g:plusone>
+  
+</div>
+
+    
+  </footer>
+</article>
+
+</div>
+
+<aside role=sidebar>
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/08/14/the-beginning/">The Beginning</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("zuiwer", 4, true);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/zuiwer" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @zuiwer</a>
+  
+</section>
+
+
+
+
+  
+</aside>
+
+
     </div>
   </div>
   <footer><p>
