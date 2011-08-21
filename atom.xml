@@ -4,7 +4,7 @@
   <title>Post Modern</title>
   <link href="http://nlemke.github.com/atom.xml" rel="self"/>
   <link href="http://nlemke.github.com/"/>
-  <updated>2011-08-21T19:23:54+02:00</updated>
+  <updated>2011-08-21T19:25:43+02:00</updated>
   <id>http://nlemke.github.com/</id>
   <author>
     <name>Norman Lemke</name>
@@ -13,14 +13,11 @@
 
   
   <entry>
-    <title>Testing Webfonts</title>
+    <title>ZOMG</title>
     <link href="http://nlemke.github.com/blog/2011/08/21/testing-webfonts/"/>
     <updated>2011-08-21T19:19:00+02:00</updated>
     <id>http://nlemke.github.com/blog/2011/08/21/testing-webfonts</id>
-    <content type="html">&lt;p&gt;Let's see if we can implement webfonts!
-&lt;link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'&gt;&lt;/p&gt;
-
-&lt;p&gt;Woop woop!&lt;/p&gt;
+    <content type="html">&lt;p&gt;Whatever!&lt;/p&gt;
 </content>
   </entry>
   
